@@ -28,7 +28,7 @@ function App() {
         price: 12.00, 
         category: 'Main Dishes', 
         desc: 'Beef, cheddar, and brioche.',
-        imageUrl: 'src/picture/burger.jpg' 
+        imageUrl: 'picture/burger.jpg' 
       },
       { 
         id: 2, 
@@ -36,7 +36,7 @@ function App() {
         price: 5.00, 
         category: 'Appetizers', 
         desc: 'Sea salt and rosemary.',
-        imageUrl: 'src/picture/fries.jpg' 
+        imageUrl: 'picture/fries.jpg' 
       },
       // ADD DRINKS BELOW
       { 
@@ -45,7 +45,7 @@ function App() {
         price: 2.50, 
         category: 'Drinks', 
         desc: 'Chilled with lemon slice.',
-        imageUrl: 'src/picture/cola.webp' 
+        imageUrl: 'picture/cola.webp' 
       },
       { 
         id: 4, 
@@ -53,7 +53,7 @@ function App() {
         price: 4.00, 
         category: 'Drinks', 
         desc: '100% freshly squeezed.',
-        imageUrl: 'src/picture/orange.jpg' 
+        imageUrl: 'picture/orange.jpg' 
       }
     ];
   });
