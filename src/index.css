@@ -1,0 +1,68 @@
+:root {
+  --gold: #d4af37;
+  --dark: #121212;
+  --card-bg: #1e1e1e;
+  --text: #f8f5f0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+  background: #000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--gold);
+}
+
+.logo { color: var(--gold); font-weight: bold; font-size: 1.5rem; letter-spacing: 2px; }
+
+.role-switcher button {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--gold);
+  padding: 8px 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.role-switcher button.active { background: var(--gold); color: #000; }
+
+.container { display: flex; padding: 20px; gap: 20px; }
+
+.menu-grid, .kitchen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  flex: 3;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.gold-btn {
+  background: var(--gold);
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  background: #333;
+  color: var(--gold);
+  border-radius: 12px;
+  font-size: 0.75rem;
+}
