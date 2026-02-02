@@ -22,8 +22,39 @@ function App() {
   const [menu, setMenu] = useState(() => {
     const saved = localStorage.getItem('ff_menu');
     return saved ? JSON.parse(saved) : [
-      { id: 1, name: 'Cheese Burger', price: 12.00, category: 'Main Dishes', desc: 'Beef, cheddar, and brioche.' },
-      { id: 2, name: 'French Fries', price: 5.00, category: 'Appetizers', desc: 'Sea salt and rosemary.' }
+      { 
+        id: 1, 
+        name: 'Cheese Burger', 
+        price: 12.00, 
+        category: 'Main Dishes', 
+        desc: 'Beef, cheddar, and brioche.',
+        imageUrl: '/picture/burger.jpg' 
+      },
+      { 
+        id: 2, 
+        name: 'French Fries', 
+        price: 5.00, 
+        category: 'Appetizers', 
+        desc: 'Sea salt and rosemary.',
+        imageUrl: '/picture/fries.jpg' 
+      },
+      // ADD DRINKS BELOW
+      { 
+        id: 3, 
+        name: 'Iced Cola', 
+        price: 2.50, 
+        category: 'Drinks', 
+        desc: 'Chilled with lemon slice.',
+        imageUrl: '/picture/cola.webp' 
+      },
+      { 
+        id: 4, 
+        name: 'Orange Juice', 
+        price: 4.00, 
+        category: 'Drinks', 
+        desc: '100% freshly squeezed.',
+        imageUrl: '/picture/orange.jpg' 
+      }
     ];
   });
 
